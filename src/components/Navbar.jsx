@@ -1,3 +1,5 @@
+"use client";
+import Link from "next/link";
 import React from "react";
 
 function Navbar() {
@@ -17,13 +19,13 @@ function Navbar() {
           />
         </div>
         <div>
-          <p>Home</p>
+          <Link href="/">Home</Link>
         </div>
         <div>
-          <p>About Us</p>
+          <Link href="/aboutus">About Us</Link>
         </div>
         <div>
-          <p>Contact Us</p>
+          <Link href="/contactus">Contact Us</Link>
         </div>
         <div>
           <p>Packages</p>

@@ -2,6 +2,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import NavContactDetail from "@/components/NavContactDetail";
 import Packages from "@/components/Packages";
 
