@@ -3,7 +3,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className=" flex-col bg-black px-10 py-10 flex ">
+    <footer className=" flex-col bg-gray-950 px-10 py-10 flex ">
       <div className="flex  h-64 ">
         <section className="flex w-1/3 justify-center items-center">
           <img
@@ -32,6 +32,7 @@ function Footer() {
               <Link href="/aboutus">About us</Link>
               <Link href="/contactus">Contact us</Link>
               <Link href="/privacy-policy">Privacy Policy</Link>
+              <Link href="/admin">Admin</Link>
             </ul>
           </div>
         </section>
