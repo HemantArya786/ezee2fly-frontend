@@ -110,7 +110,7 @@ function page() {
           </li>
         </ul>
       </section>
-      <section>
+      {/* <section>
         <div>
           <p className="text-5xl font-bold text-center">Why Ezee 2 fly</p>
           <p className="text-center py-10">
@@ -184,7 +184,7 @@ function page() {
             with us, as we turn your travel dreams into reality!
           </p>
         </div>
-      </section>
+      </section> */}
       <section className="flex gap-10 px-16 py-10">
         <div className="w-1/2 ">
           <p className="text-3xl p-10 ">

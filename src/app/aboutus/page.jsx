@@ -71,13 +71,13 @@ function AboutUs() {
             we’re proud to have both. We have been in business since the last 8
             years and have built a strong network of hospitality brands, airline
             operators, tourism boards, cruise liners and on-ground vendors
-            required to execute a smooth holiday experience for our clients.{" "}
+            required to execute a smooth holiday experience for our clients.
           </p>
           <p className="py-2">
             In these 8 years we have served over 50000 happy travellers and have
             garnered over 1000 positive reviews on google and other online
             platforms. These reviews speak volumes about the trust bestowed upon
-            us by our patrons.{" "}
+            us by our patrons.
           </p>
           <p className="py-2">
             Our comprehensive range of services includes Visa assistance, cruise
