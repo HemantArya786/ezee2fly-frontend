@@ -1,17 +1,15 @@
 "use client";
 import Link from "next/link";
+import logo from "../Images/logo.png";
 import React from "react";
+import Image from "next/image";
 
 function Navbar() {
   return (
     <nav className="flex    py-2 px-2  justify-between  sticky top-0 z-50 bg-[#18134d] text-white">
       <section className="	 ">
         <Link href="/">
-          {" "}
-          <img
-            className="h-16  w-full "
-            src="https://thumbs.dreamstime.com/b/ready-summer-vacation-travel-background-d-rendering-114574299.jpg"
-          />
+          <Image className="h-16  w-full " src={logo} />
         </Link>
       </section>
       <section className="flex items-center justify-center gap-20  flex-1">

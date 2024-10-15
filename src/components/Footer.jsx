@@ -1,15 +1,14 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import logo from "../Images/logo.png";
 
 function Footer() {
   return (
     <footer className=" flex-col   px-10 py-10 flex bg-[#18134d] text-white">
       <div className="flex  h-64 ">
-        <section className="flex w-1/3 justify-center items-center">
-          <img
-            className=" h-20  "
-            src="https://thumbs.dreamstime.com/b/ready-summer-vacation-travel-background-d-rendering-114574299.jpg"
-          />
+        <section className="flex w-1/3 justify-center items-center  ">
+          <Image className=" h-20 w-1/2  " src={logo} />
         </section>
         <section className="w-1/3  items-center  flex justify-start">
           <div className="">
