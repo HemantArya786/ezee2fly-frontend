@@ -4,7 +4,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav className="flex  mt-2  py-2 px-2  justify-between  sticky top-0 z-50 bg-black">
+    <nav className="flex  mt-2  py-2 px-2  justify-between  sticky top-0 ">
       <section className="	 ">
         <Link href="/">
           <img
@@ -17,7 +17,7 @@ function Navbar() {
         <div>
           <input
             placeholder="Search"
-            className="py-2 px-2 text-black w-96 rounded-md	"
+            className="py-2 px-2 text-black border w-96 rounded-md	"
           />
         </div>
         <div>
