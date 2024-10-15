@@ -5,7 +5,7 @@ import { IoIosCall } from "react-icons/io";
 function NavContactDetail() {
   return (
     <div>
-      <div className="flex justify-around py-5 bg-gray-500 gap-96 ">
+      <div className="flex justify-around py-5 bg-[#F8F8F8] gap-96 ">
         <div className="flex  gap-2 ">
           <span className="pt-1 ">
             <IoIosMail />

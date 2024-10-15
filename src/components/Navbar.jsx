@@ -4,7 +4,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav className="flex    py-2 px-2  justify-between  sticky top-0 z-50 bg-gray-400">
+    <nav className="flex    py-2 px-2  justify-between  sticky top-0 z-50 bg-[#18134d] text-white">
       <section className="	 ">
         <Link href="/">
           {" "}
