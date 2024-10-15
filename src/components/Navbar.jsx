@@ -6,33 +6,34 @@ import Image from "next/image";
 
 function Navbar() {
   return (
-    <nav className="flex    py-2 px-2  justify-between  sticky top-0 z-50 bg-[#18134d] text-white">
-      <section className="	 ">
-        <Link href="/">
-          <Image className="h-16  w-full " src={logo} />
-        </Link>
-      </section>
-      <section className="flex items-center justify-center gap-20  flex-1">
-        <div>
+    <nav className=" sticky top-0 z-50 bg-primary text-white">
+      <div className="flex container mx-auto  py-2   justify-between px-16">
+        <section className=" 	 ">
+          <Link href="/">
+            <Image className="h-16  w-full " src={logo} />
+          </Link>
+        </section>
+        <section className="flex items-center justify-center">
           <input
             placeholder="Search"
-            className="py-2 px-2 text-black w-96 rounded-md border bg	"
+            className="py-2 px-4 text-black w-96 rounded-full text-md border bg	"
           />
-        </div>
-        <div>
-          <Link href="/">Home</Link>
-        </div>
-        <div>
-          <Link href="/aboutus">About Us</Link>
-        </div>
-        <div>
-          <Link href="/contactus">Contact Us</Link>
-        </div>
-        <div>
-          <p>Packages</p>
-        </div>
-      </section>
-      <section> </section>
+        </section>
+        <section className="flex items-center justify-center gap-10  ">
+          <div>
+            <Link href="/">Home</Link>
+          </div>
+          <div>
+            <Link href="/aboutus">About Us</Link>
+          </div>
+          <div>
+            <Link href="/contactus">Contact Us</Link>
+          </div>
+          <div>
+            <p>Packages</p>
+          </div>
+        </section>
+      </div>
     </nav>
   );
 }

@@ -5,10 +5,13 @@ import logo from "../Images/logo.png";
 
 function Footer() {
   return (
-    <footer className=" flex-col   px-10 py-10 flex bg-[#18134d] text-white">
+    <footer className=" flex-col   px-10 pt-5 flex bg-primary text-white">
       <div className="flex  h-64 ">
-        <section className="flex w-1/3 justify-center items-center  ">
-          <Image className=" h-20 w-1/2  " src={logo} />
+        <section className="w-1/3 flex justify-center items-center ">
+          <div className="max-w-[300px]">
+            {" "}
+            <Image className=" " src={logo} />
+          </div>{" "}
         </section>
         <section className="w-1/3  items-center  flex justify-start">
           <div className="">
@@ -36,6 +39,7 @@ function Footer() {
           </div>
         </section>
       </div>
+      <hr />
       <div className="flex justify-center py-5  ">
         <p>
           Copyright © 2024. All rights reserved. Developed by M-17 Production.

@@ -1,19 +1,20 @@
+"use client";
+import HoverButton from "@/components/HoverButton";
 import React from "react";
 
 function AboutUs() {
   return (
-    <div>
+    <div className="container mx-auto">
       <section>
-        <img
-          className="h-72 w-full"
-          src="https://static.vecteezy.com/system/resources/previews/007/932/618/non_2x/about-us-button-about-us-text-template-for-website-about-us-icon-flat-style-vector.jpg"
-        />
+        <p className="text-9xl font-bold text-center py-20 text-primary">
+          About Us
+        </p>
       </section>
-      <section className="flex">
-        <div className="w-1/2 flex justify-center items-center text-4xl p-10 font-bold text-center">
+      <section className=" flex flex-col justify-center items-center">
+        <div className=" flex justify-center items-center text-5xl p-5 font-bold text-center text-primary">
           <p>Travel is the only thing you buy that makes you richer</p>
         </div>
-        <div className="w-1/2 p-10 text-start ">
+        <div className=" p-10 text-center max-w-[80vw] ">
           <p className="py-3">
             Flip Trip Holidays promises to open you up to enriching new
             experiences and bring the world at your feet. No matter where you
@@ -33,34 +34,32 @@ function AboutUs() {
           </p>
         </div>
       </section>
-      <section className="py-20">
-        <div className="text-5xl font-bold flex justify-center">
+      <section className="py-5 flex flex-col items-center">
+        <div className="text-5xl font-bold text-center  text-primary">
           <p>GO TRAVEL.DISCOVER. REMEMBER US!!</p>
         </div>
-        <div className="text-center px-10 py-10">
-          <p>
+        <div className="p-10 text-center max-w-[80vw]">
+          <p className="py-3">
             We have a package for anyone and everyone, no matter if you’re
-            looking for budget options or a luxury <br />
-            holiday. We specialize in all domestic and international packages
-            and have extensive experience in <br />
+            looking for budget options or a luxury holiday. We specialize in all
+            domestic and international packages and have extensive experience in
             designing island holidays to Bali, Singapore, Mauritius, Maldives,
-            Thailand, Sri Lanka along with cities like <br /> Hong Kong and
-            Macau. We have a huge customer base with highly satisfactory
-            experience for Europe, UK, <br /> New Zealand, and Australia. With
-            Flip Trip you can turn your boring holidays into adventurous
-            vacations. <br /> Experience beautiful nature, lush valleys,
-            pristine beaches, ancient monuments, religious places, historical
-            <br />
-            destinations, and cultural hubs: we will plan it all.
+            Thailand, Sri Lanka along with cities like Hong Kong and Macau. We
+            have a huge customer base with highly satisfactory experience for
+            Europe, UK, New Zealand, and Australia. With Flip Trip you can turn
+            your boring holidays into adventurous vacations. Experience
+            beautiful nature, lush valleys, pristine beaches, ancient monuments,
+            religious places, historical destinations, and cultural hubs: we
+            will plan it all.
           </p>
         </div>
       </section>
       <section className="flex justify-center pb-10">
-        <button className="border py-3 px-16">Contact Us</button>
+        <HoverButton title={"Contact Us"} />
       </section>
       <section className="py-10">
         <div>
-          <p className="text-5xl font-bold text-center">
+          <p className="text-5xl font-bold text-center text-primary">
             Why choose Flip Trip Holidays?
           </p>
         </div>
