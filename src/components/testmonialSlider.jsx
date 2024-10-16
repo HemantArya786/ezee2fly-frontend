@@ -7,7 +7,7 @@ const testimonials = [
     name: "Alice Johnson",
     image:
       "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=250&h=250&dp",
-    text: "This product has completely transformed my workflow. I cant imagine going back to my old methods!",
+    text: "This product has completely transformed my workflow. I can't imagine going back to my old methods!",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const testimonials = [
     name: "Carol Williams",
     image:
       "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=250&h=250&dp",
-    text: "Ive recommended this to all my colleagues. Its a game-changer for our industry.",
+    text: "I've recommended this to all my colleagues. It's a game-changer for our industry.",
   },
 ];
 
@@ -40,34 +40,38 @@ const TestimonialSlider = () => {
 
   return (
     <div className="w-full max-w-4xl mx-auto px-4 py-8">
-      <div className="relative bg-white rounded-3xl shadow-lg p-8 md:p-12 overflow-hidden">
+      <div className="relative bg-white rounded-3xl shadow-lg p-6 md:p-10 lg:p-12 overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-100 to-purple-100 opacity-50 z-0"></div>
         <div className="relative z-10">
           <div className="flex flex-col items-center text-center">
             <img
               src={testimonials[currentIndex].image}
               alt={testimonials[currentIndex].name}
-              className="w-20 h-20 rounded-full border-4 border-white shadow-md mb-4"
+              className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-full border-4 border-white shadow-md mb-4"
             />
-            <p className="text-gray-800 text-lg md:text-xl mb-6 italic">
+            <p className="text-gray-800 text-sm sm:text-base lg:text-lg md:text-xl mb-6 italic">
               "{testimonials[currentIndex].text}"
             </p>
-            <h3 className="text-xl font-semibold text-gray-900">
+            <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-900">
               {testimonials[currentIndex].name}
             </h3>
           </div>
         </div>
+
+        {/* Previous button */}
         <button
           onClick={prevTestimonial}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md hover:bg-gray-100 transition-colors duration-200"
+          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-1 sm:p-2 shadow-md hover:bg-gray-100 transition-colors duration-200"
         >
-          <FaChevronLeft className="w-6 h-6 text-gray-600" />
+          <FaChevronLeft className="w-4 h-4 sm:w-6 sm:h-6 text-gray-600" />
         </button>
+
+        {/* Next button */}
         <button
           onClick={nextTestimonial}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md hover:bg-gray-100 transition-colors duration-200"
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-1 sm:p-2 shadow-md hover:bg-gray-100 transition-colors duration-200"
         >
-          <FaChevronRight className="w-6 h-6 text-gray-600" />
+          <FaChevronRight className="w-4 h-4 sm:w-6 sm:h-6 text-gray-600" />
         </button>
       </div>
     </div>
