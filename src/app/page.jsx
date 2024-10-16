@@ -7,6 +7,7 @@ import ServicesSection from "@/components/Cards";
 
 import React from "react";
 import Cards from "@/components/Cards";
+import CountSection from "@/components/CountSection";
 
 function page() {
   const cardData = [
@@ -116,6 +117,7 @@ function page() {
         </div>
         <Cards data={cardData3} />
       </section>
+      <CountSection />
 
       {/* <section>
         <div>
