@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 
 function CountSection() {
   return (
-    <div className=" bg-gray-200 py-10">
+    <div className=" bg-gray-200 py-10  ">
       <section className="flex flex-col justify-center items-center ">
         <div>
           <p className="flex justify-center items-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl p-4 sm:p-5 font-bold text-center text-primary">
