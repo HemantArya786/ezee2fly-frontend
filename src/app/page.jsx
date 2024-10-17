@@ -8,7 +8,7 @@ import ServicesSection from "@/components/Cards";
 import React from "react";
 import Cards from "@/components/Cards";
 import CountSection from "@/components/CountSection";
-import BoxCard from "@/components/BoxCard";
+import MultiCardSecttion from "@/components/MultiCardSecttion";
 
 function page() {
   const cardData = [
@@ -119,7 +119,7 @@ function page() {
         <Cards data={cardData3} />
       </section>
       <CountSection />
-      <BoxCard />
+      <MultiCardSecttion />
 
       <section className="flex flex-col lg:flex-row gap-10 px-4 sm:px-8 md:px-12 lg:px-16 py-10">
         <div className="lg:w-1/2 w-full">

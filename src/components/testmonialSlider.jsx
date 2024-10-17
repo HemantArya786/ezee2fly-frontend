@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Slider from "react-slick";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const testimonials = [
@@ -26,56 +27,73 @@ const testimonials = [
 ];
 
 const TestimonialSlider = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextTestimonial = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-  };
-
-  const prevTestimonial = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length
-    );
+  const sliderSettings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        },
+      },
+    ],
   };
 
   return (
     <div className="w-full max-w-4xl mx-auto px-4 py-8">
-      <div className="relative bg-white rounded-3xl shadow-lg p-6 md:p-10 lg:p-12 overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-100 to-purple-100 opacity-50 z-0"></div>
-        <div className="relative z-10">
-          <div className="flex flex-col items-center text-center">
-            <img
-              src={testimonials[currentIndex].image}
-              alt={testimonials[currentIndex].name}
-              className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-full border-4 border-white shadow-md mb-4"
-            />
-            <p className="text-gray-800 text-sm sm:text-base lg:text-lg md:text-xl mb-6 italic">
-              "{testimonials[currentIndex].text}"
-            </p>
-            <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-900">
-              {testimonials[currentIndex].name}
-            </h3>
+      <Slider {...sliderSettings}>
+        {testimonials.map((item, index) => (
+          <div key={index}>
+            <div className="bg-white rounded-3xl shadow-lg p-6 md:p-10 lg:p-12 overflow-hidden">
+              <div className="flex flex-col items-center text-center">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-full border-4 border-white shadow-md mb-4"
+                />
+                <p className="text-gray-800 text-sm sm:text-base lg:text-lg md:text-xl mb-6 italic">
+                  "{item.text}"
+                </p>
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-900">
+                  {item.name}
+                </h3>
+              </div>
+            </div>
           </div>
-        </div>
-
-        {/* Previous button */}
-        <button
-          onClick={prevTestimonial}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-1 sm:p-2 shadow-md hover:bg-gray-100 transition-colors duration-200"
-        >
-          <FaChevronLeft className="w-4 h-4 sm:w-6 sm:h-6 text-gray-600" />
-        </button>
-
-        {/* Next button */}
-        <button
-          onClick={nextTestimonial}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-1 sm:p-2 shadow-md hover:bg-gray-100 transition-colors duration-200"
-        >
-          <FaChevronRight className="w-4 h-4 sm:w-6 sm:h-6 text-gray-600" />
-        </button>
-      </div>
+        ))}
+      </Slider>
     </div>
   );
 };
+
+const PrevArrow = ({ onClick }) => (
+  <button
+    onClick={onClick}
+    className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-1 sm:p-2 shadow-md hover:bg-gray-100 transition-colors duration-200"
+  >
+    <FaChevronLeft className="w-4 h-4 sm:w-6 sm:h-6 text-gray-600" />
+  </button>
+);
+
+const NextArrow = ({ onClick }) => (
+  <button
+    onClick={onClick}
+    className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-1 sm:p-2 shadow-md hover:bg-gray-100 transition-colors duration-200"
+  >
+    <FaChevronRight className="w-4 h-4 sm:w-6 sm:h-6 text-gray-600" />
+  </button>
+);
 
 export default TestimonialSlider;
