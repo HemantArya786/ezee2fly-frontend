@@ -10,7 +10,7 @@ function Footer() {
         <div className="flex flex-col md:flex-row md:h-64 gap-8 md:gap-0">
           <section className="md:w-1/3 flex justify-center md:items-center">
             <div className="max-w-[200px] md:max-w-[300px]">
-              <Image className="w-full h-auto" src={logo} alt="Logo" />
+              <Image className="w-full h-" src={logo} alt="Logo" />
             </div>
           </section>
 

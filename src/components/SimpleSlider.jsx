@@ -27,7 +27,6 @@ function SamplePrevArrow(props) {
       className={"absolute z-99 top-1/2 left-0 text-white text-5xl p-5 pt-0  "}
       onClick={onClick}
     >
-      choot
       <FaChevronCircleLeft />
     </div>
   );
