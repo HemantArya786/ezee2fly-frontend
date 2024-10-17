@@ -51,7 +51,7 @@ function Navbar() {
         </section>
 
         {/* Links Section */}
-        <section className="hidden md:flex items-center gap-10">
+        <section className="hidden md:flex items-center gap-10 font-semibold">
           <Link href="/">Home</Link>
           <Link href="/aboutus">About Us</Link>
           <Link href="/contactus">Contact Us</Link>

@@ -5,9 +5,9 @@ import { IoIosCall } from "react-icons/io";
 function NavContactDetail() {
   return (
     <div>
-      <div className="flex flex-col md:flex-row md:justify-around justify-center items-center py-3 bg-[#F8F8F8] md:gap-96 gap-4">
+      <div className="flex justify-between px-3 md:flex-row md:justify-around  items-center py-3 bg-[#F8F8F8] md:gap-96 gap-4">
         {/* Email Section */}
-        <div className="flex gap-2 text-[14px] items-center">
+        <div className="flex gap-2 md:text-[14px] text-sm items-center">
           <span>
             <IoIosMail size={20} />
           </span>
@@ -15,7 +15,7 @@ function NavContactDetail() {
         </div>
 
         {/* Phone Section */}
-        <div className="flex gap-2 text-[14px] items-center">
+        <div className="flex gap-2 text-sm md:text-[14px] items-center">
           <span>
             <IoIosCall size={18} />
           </span>
